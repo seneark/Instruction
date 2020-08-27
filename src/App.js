@@ -24,9 +24,9 @@ class Home extends Component {
                 display: 'flex',
                 flexDirection: "column",
                 justifyContent: "center",
-                height: "100vh",
                 textAlign: "center",
-                color:"White"
+                color:"White",
+                marginBottom:50
             }}>
                 <div style={{
                     width: "80vw",
@@ -50,7 +50,7 @@ class Home extends Component {
 
                         </Zoom><Zoom delay={1000} right cascade>
                         <div style={{display: 'inline-block'}}>
-                            entered in lower case without any
+                            entered in lower case without any space or special characters.
                         </div>
                     </Zoom>
                     </h3>
@@ -146,14 +146,16 @@ class Home extends Component {
                     </h3>
                     <br/>
                     <br/>
-                    <Flip delay={8000}>
+                    <Flip delay={7000}>
                         {this.state.Register?
+                          <a href={"https://seneark.github.io/RoUNd1HaCk/"}>
                             <Button
                                 variant="outlined"
                                 color="secondary"
                             >
-                                <a href={"https://seneark.github.io/RoUNd1HaCk/"}>Go to First Round</a>
-                            </Button>:
+                                Go to First Round
+                            </Button>
+                            </a>:
                             <Button
                                 variant="outlined"
                                 color="secondary"
@@ -164,10 +166,12 @@ class Home extends Component {
                                 Register at Google Form
                             </Button>
                         }
-
-
                     </Flip>
                 </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
             </div>
         );
     }
